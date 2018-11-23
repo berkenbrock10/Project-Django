@@ -28,7 +28,7 @@ class Cliente(models.Model):
 class Fornecedor(models.Model):
     nome = models.CharField(max_length=200)
     cnpj = models.IntegerField()
-    nascimento = models.DateField()
+    desde = models.DateField()
     cep = models.IntegerField(max_length=8)
     endereco = models.CharField(max_length=200)
     bairro = models.CharField(max_length=200)
